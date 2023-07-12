@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        body {
+            width: 100;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background-image: url("download.jfif");
+            background-image: 100%;
+        }
+        
+        .container {
+            top: 50px;
+            bottom: 50px;
+            background: whitesmoke;
+            text-align: absolute;
+            padding: 20px;
+            margin: 20px;
+        }
+        
+        .btn {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+            height: 20%;
+        }
+        
+        button {
+            height: 50px;
+            width: 100px;
+        }
+        
+        p {
+            font-size: 24px;
+            border: 20px;
+        }
+        
+        input {
+            border: 20%;
+            width: 50%;
+            font-size: 100%;
+        }
+    </style>
+    <script>
+        function add() {
+            debugger
+            var numOne,
+                numTwo,
+                add;
+            numOne = parseInt(document.getElementById("first").value);
+            numTwo = parseInt(document.getElementById("second").value);
+            add = numOne + numTwo;
+            document.getElementById("answer").value = add;
+        }
+
+        function sub() {
+            var numOne,
+                numTwo,
+                sub;
+            numOne = parseInt(document.getElementById("first").value);
+            numTwo = parseInt(document.getElementById("second").value);
+            sub = numOne - numTwo;
+            document.getElementById("answer").value = sub;
+        }
+
+        function mul() {
+            var numOne,
+                numTwo,
+                mul;
+            numOne = parseInt(document.getElementById("first").value);
+            numTwo = parseInt(document.getElementById("second").value);
+            mul = numOne * numTwo;
+            document.getElementById("answer").value = mul;
+        }
+
+        function div() {
+            var numOne,
+                numTwo,
+                div;
+            numOne = parseInt(document.getElementById("first").value);
+            numTwo = parseInt(document.getElementById("second").value);
+            div = numOne / numTwo;
+            document.getElementById("answer").value = div;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <p>Enter the First Number: <input id="first"></p>
+        <p>Enter the Second Number: <input id="second"></p>
+        <div class="btn">
+            <button onclick="add()">Add</button>
+            <button onclick="sub()">Sub</button>
+            <button onclick="mul()">mul</button>
+            <button onclick="div()">div</button>
+            <p>Result <input id="answer"></p>
+        </div>
+
+    </div>
+</body>
+
+</html>.
